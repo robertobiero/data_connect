@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MoviesList from './components/MoviesList';
+import AddMovie from './components/AddMovie';
 import './App.css';
 
 function App() {
@@ -26,7 +27,10 @@ function App() {
     <React.Fragment>
       <section>
         <button>Fetch Movies</button>
-      </section>
+          </section>
+          <section>
+              <AddMovie />
+          </section>
       <section>
         <MoviesList movies={dummyMovies} />
       </section>
